@@ -12,6 +12,9 @@
     <modules>
         <module>customer</module>
         <module>fraud</module>
+        <module>user_json_task</module>
+        <module>nci_web_client</module>
+        <module>my_id</module>
     </modules>
 
     <properties>

@@ -1,0 +1,36 @@
+server:
+  port: 8082
+
+spring:
+  r2dbc:
+    username: amigoscode
+    url: r2dbc:postgresql://localhost:5431/alta_service
+    password: root123
+  flyway:
+    url: jdbc:postgresql://localhost:5431/alta_service
+    locations: classpath:db/migrations
+    password: root123
+    user: amigoscode
+  application:
+    name: alta_service
+
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          r2dbc: debug
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    datasource:
+#    username: 'amigoscode'
+#    url: jdbc:postgresql://localhost:5431/alta_service
+#    password: 'root123'
+#  jpa:
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+#        format_sql: true
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: 'true'

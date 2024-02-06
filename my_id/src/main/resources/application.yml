@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: my_id_service
+  datasource:
+    username: 'amigoscode'
+    url: jdbc:postgresql://localhost:5431/my_id_service
+    password: 'root123'
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+
+myId:
+  url: https://devmyid.uz/
+  clientId: octo_sdk-6oIplJ0AmUqKFJO8TGr2rQav1QMkvJ3T3VFqczAo
+  secretCode: LFrZg8lH7k5X2cEheqDSozxRQFdRzubo5FbMuMnUTD9AN4703N6caShLtOFRRTXZ89H756BAfg5oOxJPfo9D2N6Z08kNsRQIoYuf

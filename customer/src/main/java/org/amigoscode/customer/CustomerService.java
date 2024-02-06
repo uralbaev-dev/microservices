@@ -4,6 +4,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.Objects;
+
 /**
  * @className: CustomerService
  * @date: 14.08.2023
@@ -33,7 +35,7 @@ public class CustomerService {
                 customer.getId()
         );
 
-        if (fraudCheckResponse.isFraudster()) {
+        if (Objects.requireNonNull(fraudCheckResponse).isFraudster()) {
             throw new IllegalStateException("fraudster");
         }
         // todo send notification

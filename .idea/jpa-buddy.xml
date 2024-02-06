@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="JpaBuddyIdeaProjectConfig">
+  <component name="JpaBuddyIdeaProjectConfig" ddlActionDbType="postgres" isInitGenerateDdl="true">
+    <option name="sourceDiffType" value="DB" />
     <option name="defaultUnitInitialized" value="true" />
     <option name="renamerInitialized" value="true" />
+    <option name="sourceDbValue" value="fb3ab085-2567-400b-8da4-2a555c51828a" />
+    <option name="sourceModelValue" value="Default" />
+    <option name="targetDbValue" value="fb3ab085-2567-400b-8da4-2a555c51828a" />
   </component>
 </project>
